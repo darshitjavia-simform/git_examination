@@ -1,0 +1,17 @@
+{
+  "name": "mern-project",
+  "version": "1.0.0",
+  "description": "A simple MERN stack application with separate frontend and backend.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix frontend\" \"npm run start --prefix backend\"",
+    "install": "npm install --prefix frontend && npm install --prefix backend",
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\""
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "MIT"
+}

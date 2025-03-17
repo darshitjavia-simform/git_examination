@@ -1,0 +1,26 @@
+mern-project
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── utils
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── public
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   ├── package.json
+│   └── .env.sample
+├── backend
+│   ├── src
+│   │   ├── controllers
+│   │   ├── models
+│   │   ├── routes
+│   │   ├── middleware
+│   │   ├── config
+│   │   └── app.js
+│   ├── package.json
+│   └── .env.sample
+├── package.json
+└── README.md
