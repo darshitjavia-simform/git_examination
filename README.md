@@ -1,6 +1,15 @@
 # MERN Stack Project
 
-This is a simple MERN (MongoDB, Express, React, Node.js) stack project structured with separate frontend and backend directories. The project is designed to demonstrate a full-stack application using the MERN stack.
+A full-stack application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack with a clean architecture and modern development practices.
+
+## Tech Stack
+
+- **Frontend:** React.js v18.2.0
+- **Backend:** Node.js v18.x, Express.js v4.18.x
+- **Database:** MongoDB v6.0+
+- **Authentication:** JWT
+- **State Management:** Redux Toolkit
+- **API Documentation:** Swagger/OpenAPI
 
 ## Project Structure
 
@@ -8,10 +17,10 @@ This is a simple MERN (MongoDB, Express, React, Node.js) stack project structure
 mern-project
 ├── frontend
 │   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── services
-│   │   ├── utils
+│   │   ├── components      # Reusable UI components
+│   │   ├── pages          # Page components
+│   │   ├── services       # API services
+│   │   ├── utils          # Utility functions
 │   │   ├── App.js
 │   │   └── index.js
 │   ├── public
@@ -19,26 +28,24 @@ mern-project
 │   └── .env.sample
 ├── backend
 │   ├── src
-│   │   ├── controllers
-│   │   ├── models
-│   │   ├── routes
-│   │   ├── middleware
-│   │   ├── config
+│   │   ├── controllers    # Route controllers
+│   │   ├── models        # Database models
+│   │   ├── routes        # API routes
+│   │   ├── middleware    # Custom middleware
+│   │   ├── config        # Configuration files
 │   │   └── app.js
 │   ├── package.json
 │   └── .env.sample
-├── package.json
 └── README.md
 ```
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
+- Node.js (v18.x or higher)
+- MongoDB (v6.0 or higher)
+- npm (v9.x or higher) or yarn (v1.22.x or higher)
 
-- Node.js
-- MongoDB
-
-### Installation
+## Installation
 
 1. Clone the repository:
    ```bash
@@ -46,38 +53,74 @@ mern-project
    cd mern-project
    ```
 
-2. Install dependencies for the frontend:
+2. Install frontend dependencies:
    ```bash
    cd frontend
    npm install
    ```
 
-3. Install dependencies for the backend:
+3. Install backend dependencies:
    ```bash
    cd ../backend
    npm install
    ```
 
-### Environment Variables
+## Environment Setup
 
-Create a `.env` file in both the `frontend` and `backend` directories based on the provided `.env.sample` files.
+### Backend (.env.sample)
+```
+NODE_ENV=development
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/your-database
+JWT_SECRET=your-secret-key
+JWT_EXPIRES_IN=7d
+```
 
-### Running the Application
+### Frontend (.env.sample)
+```
+REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_ENV=development
+```
 
-1. Start the backend server:
+## Running the Application
+
+1. Start MongoDB service:
    ```bash
-   cd backend
-   npm start
+   sudo service mongod start
    ```
 
-2. Start the frontend application:
+2. Start the backend server:
+   ```bash
+   cd backend
+   npm run dev  # For development
+   # or
+   npm start    # For production
+   ```
+
+3. Start the frontend application:
    ```bash
    cd frontend
    npm start
    ```
 
-### Features
+The frontend will be available at `http://localhost:3000`
+The backend API will be available at `http://localhost:5000`
 
-- RESTful API built with Express and MongoDB.
-- React frontend with routing and component structure.
-- Sample environment variable configurations.
+## API Documentation
+
+API documentation is available at `http://localhost:5000/api-docs` when running the backend server.
+
+## Available Scripts
+
+### Backend
+- `npm start`: Starts the production server
+- `npm run dev`: Starts the development server
+- `npm test`: Runs the test suite
+- `npm run lint`: Runs the linter
+
+### Frontend
+- `npm start`: Starts the development server
+- `npm run build`: Builds the app for production
+- `npm test`: Runs the test suite
+- `npm run lint`: Runs the linter
+
