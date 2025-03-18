@@ -14,29 +14,28 @@ A full-stack application built using the MERN (MongoDB, Express.js, React.js, No
 ## Project Structure
 
 ```
-mern-project
-├── frontend
-│   ├── src
-│   │   ├── components      # Reusable UI components
-│   │   ├── pages          # Page components
-│   │   ├── services       # API services
-│   │   ├── utils          # Utility functions
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── public
-│   ├── package.json
-│   └── .env.sample
-├── backend
-│   ├── src
-│   │   ├── controllers    # Route controllers
-│   │   ├── models        # Database models
-│   │   ├── routes        # API routes
-│   │   ├── middleware    # Custom middleware
-│   │   ├── config        # Configuration files
-│   │   └── app.js
-│   ├── package.json
-│   └── .env.sample
-└── README.md
+frontend
+   ├── src
+   │   ├── components      # Reusable UI components
+   │   ├── pages          # Page components
+   │   ├── services       # API services
+   │   ├── utils          # Utility functions
+   │   ├── App.js
+   │   └── index.js
+   ├── public
+   ├── package.json
+   └── .env.sample
+backend
+   ├── src
+   │   ├── controllers    # Route controllers
+   │   ├── models        # Database models
+   │   ├── routes        # API routes
+   │   ├── middleware    # Custom middleware
+   │   ├── config        # Configuration files
+   │   └── app.js
+   ├── package.json
+   └── .env.sample
+README.md
 ```
 
 ## Prerequisites
